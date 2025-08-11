@@ -1,0 +1,2305 @@
+!SESSION 2024-12-05 23:58:36.048 -----------------------------------------------
+eclipse.buildId=4.33.0.20240905-0613
+java.version=23.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.osgi 4 0 2024-12-05 23:58:36.570
+!MESSAGE Bundle reference:file:org.eclipse.equinox.simpleconfigurator_1.5.300.v20240424-1301.jar not found.
+
+!ENTRY ch.qos.logback.classic 4 0 2024-12-05 23:58:36.608
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ch.qos.logback.classic [7]
+  Unresolved requirement: Import-Package: jakarta.servlet; version="[5.0.0,6.0.0)"; resolution:="optional"
+  Unresolved requirement: Import-Package: jakarta.servlet.http; version="[5.0.0,6.0.0)"; resolution:="optional"
+  Unresolved requirement: Import-Package: org.slf4j; version="[2.0.0,3.0.0)"
+    -> Export-Package: org.slf4j; bundle-symbolic-name="slf4j.api"; bundle-version="2.0.16"; version="2.0.16"; uses:="org.slf4j.event,org.slf4j.helpers,org.slf4j.spi"
+       slf4j.api [519]
+         Unresolved requirement: Require-Capability: osgi.extender; filter:="(&(osgi.extender=osgi.serviceloader.processor)(version>=1.0.0)(!(version>=2.0.0)))"
+  Unresolved requirement: Import-Package: org.slf4j.event; version="[2.0.0,3.0.0)"
+    -> Export-Package: org.slf4j.event; bundle-symbolic-name="slf4j.api"; bundle-version="2.0.16"; version="2.0.16"; uses:="org.slf4j,org.slf4j.helpers"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2007)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.buildship.compat 4 0 2024-12-05 23:58:36.638
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.buildship.compat [89]
+  Unresolved requirement: Require-Bundle: org.gradle.toolingapi; bundle-version="[8.1.1,8.2.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.gradle.toolingapi; bundle-version="8.1.1.v20240115-1636"
+       org.gradle.toolingapi [479]
+         Unresolved requirement: Import-Package: org.slf4j; version="1.7.2"
+           -> Export-Package: org.slf4j; bundle-symbolic-name="slf4j.api"; bundle-version="2.0.16"; version="2.0.16"; uses:="org.slf4j.event,org.slf4j.helpers,org.slf4j.spi"
+              slf4j.api [519]
+                Unresolved requirement: Require-Capability: osgi.extender; filter:="(&(osgi.extender=osgi.serviceloader.processor)(version>=1.0.0)(!(version>=2.0.0)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.buildship.core 4 0 2024-12-05 23:58:36.644
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.buildship.core [90]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.filesystem
+  Unresolved requirement: Require-Bundle: org.eclipse.core.expressions
+    -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+       org.eclipse.core.expressions [104]
+         Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+  Unresolved requirement: Import-Package: org.slf4j; version="1.7.2"
+    -> Export-Package: org.slf4j; bundle-symbolic-name="slf4j.api"; bundle-version="2.0.16"; version="2.0.16"; uses:="org.slf4j.event,org.slf4j.helpers,org.slf4j.spi"
+       slf4j.api [519]
+         Unresolved requirement: Require-Capability: osgi.extender; filter:="(&(osgi.extender=osgi.serviceloader.processor)(version>=1.0.0)(!(version>=2.0.0)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.buildship.ui 4 0 2024-12-05 23:58:36.644
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.buildship.ui [91]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime
+  Unresolved requirement: Require-Bundle: org.eclipse.buildship.core
+    -> Bundle-SymbolicName: org.eclipse.buildship.core; bundle-version="3.1.9.v20240115-1636"; singleton:="true"
+       org.eclipse.buildship.core [90]
+         Unresolved requirement: Require-Bundle: org.eclipse.core.filesystem
+         Unresolved requirement: Require-Bundle: org.eclipse.core.expressions
+           -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+              org.eclipse.core.expressions [104]
+                Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+         Unresolved requirement: Import-Package: org.slf4j; version="1.7.2"
+           -> Export-Package: org.slf4j; bundle-symbolic-name="slf4j.api"; bundle-version="2.0.16"; version="2.0.16"; uses:="org.slf4j.event,org.slf4j.helpers,org.slf4j.spi"
+              slf4j.api [519]
+                Unresolved requirement: Require-Capability: osgi.extender; filter:="(&(osgi.extender=osgi.serviceloader.processor)(version>=1.0.0)(!(version>=2.0.0)))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.compare 4 0 2024-12-05 23:58:36.648
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.compare [95]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench.texteditor; bundle-version="[3.5.0,4.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.views; bundle-version="[3.2.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.ui.views; bundle-version="3.12.400.v20240620-1945"; singleton:="true"
+       org.eclipse.ui.views [459]
+         Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.ide; bundle-version="[3.3.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.ui.ide; bundle-version="3.22.300.v20240828-1234"; singleton:="true"
+       org.eclipse.ui.ide [449]
+         Unresolved requirement: Import-Package: jakarta.annotation; version="[2.1.0,3.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.ui; bundle-version="[3.206.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.206.100.v20240720-1232"; singleton:="true"
+       org.eclipse.ui [441]
+         Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.core.resources; bundle-version="[3.4.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.core.resources; bundle-version="3.21.0.v20240805-1607"; singleton:="true"
+       org.eclipse.core.resources [110]
+         Unresolved requirement: Require-Bundle: org.eclipse.ant.core; bundle-version="[3.1.0,4.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.filesystem; bundle-version="[1.10.0,2.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.expressions; bundle-version="[3.9.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+              org.eclipse.core.expressions [104]
+                Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.jface.text; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jface.text; bundle-version="3.25.200.v20240816-1151"
+       org.eclipse.jface.text [266]
+         Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.core.expressions 4 0 2024-12-05 23:58:36.648
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.core.expressions [104]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.core.resources 4 0 2024-12-05 23:58:36.648
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.core.resources [110]
+  Unresolved requirement: Require-Bundle: org.eclipse.ant.core; bundle-version="[3.1.0,4.0.0)"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.core.filesystem; bundle-version="[1.10.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.core.expressions; bundle-version="[3.9.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+       org.eclipse.core.expressions [104]
+         Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.debug.core 4 0 2024-12-05 23:58:36.648
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.debug.core [113]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.variables; bundle-version="[3.2.800,4.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.core.resources; bundle-version="[3.18.0,4.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.core.resources; bundle-version="3.21.0.v20240805-1607"; singleton:="true"
+       org.eclipse.core.resources [110]
+         Unresolved requirement: Require-Bundle: org.eclipse.ant.core; bundle-version="[3.1.0,4.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.filesystem; bundle-version="[1.10.0,2.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.expressions; bundle-version="[3.9.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+              org.eclipse.core.expressions [104]
+                Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.debug.ui 4 0 2024-12-05 23:58:36.648
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.debug.ui [114]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.variables; bundle-version="[3.2.800,4.0.0)"
+  Unresolved requirement: Import-Package: org.eclipse.ui.forms.widgets
+    -> Export-Package: org.eclipse.ui.forms.widgets; bundle-symbolic-name="org.eclipse.ui.forms"; bundle-version="3.13.300.v20240424-0956"; version="0.0.0"
+       org.eclipse.ui.forms [447]
+         Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.e4.core.di 4 0 2024-12-05 23:58:36.648
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.e4.core.di [118]
+  Unresolved requirement: Import-Package: jakarta.annotation; version="[2.0.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.e4.core.di.extensions 4 0 2024-12-05 23:58:36.658
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.e4.core.di.extensions [120]
+  Unresolved requirement: Import-Package: jakarta.inject; version="[2.0.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.e4.core.di.extensions.supplier 4 0 2024-12-05 23:58:36.658
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.e4.core.di.extensions.supplier [121]
+  Unresolved requirement: Import-Package: jakarta.annotation; version="[2.1.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.e4.core.services 4 0 2024-12-05 23:58:36.661
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.e4.core.services [122]
+  Unresolved requirement: Import-Package: jakarta.annotation; version="[2.0.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2024-12-05 23:58:36.661
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.e4.ui.css.swt [126]
+  Unresolved requirement: Import-Package: org.w3c.css.sac; version="1.3.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2024-12-05 23:58:36.661
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.e4.ui.workbench [136]
+  Unresolved requirement: Import-Package: jakarta.annotation; version="[2.1.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.e4.ui.workbench.addons.swt 4 0 2024-12-05 23:58:36.661
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.e4.ui.workbench.addons.swt [137]
+  Unresolved requirement: Import-Package: jakarta.annotation; version="[2.1.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.e4.ui.workbench.renderers.swt 4 0 2024-12-05 23:58:36.661
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.e4.ui.workbench.renderers.swt [138]
+  Unresolved requirement: Import-Package: jakarta.annotation; version="[2.1.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.e4.ui.workbench.swt 4 0 2024-12-05 23:58:36.661
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.e4.ui.workbench.swt [139]
+  Unresolved requirement: Import-Package: jakarta.annotation; version="[2.1.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.eclemma.ui 4 0 2024-12-05 23:58:36.661
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.eclemma.ui [154]
+  Unresolved requirement: Require-Bundle: org.eclipse.eclemma.core
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.egit.core 4 0 2024-12-05 23:58:36.661
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.egit.core [156]
+  Unresolved requirement: Import-Package: org.bouncycastle.jce.provider; version="[1.77.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.egit.ui 4 0 2024-12-05 23:58:36.668
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.egit.ui [159]
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.attributes; version="[7.0.0,7.1.0)"
+    -> Export-Package: org.eclipse.egit.core.attributes; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="7.0.0.202409031743-r"; version="7.0.0"; uses:="org.eclipse.jgit.lib"
+       org.eclipse.egit.core [156]
+         Unresolved requirement: Import-Package: org.bouncycastle.jce.provider; version="[1.77.0,2.0.0)"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core; version="[7.0.0,7.1.0)"
+    -> Export-Package: org.eclipse.egit.core; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="7.0.0.202409031743-r"; version="7.0.0"; x-friends:="org.eclipse.egit.ui,  org.eclipse.egit.ui.test,  org.eclipse.egit.gitflow.test,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.core.junit"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.emf.ecore.xmi 4 0 2024-12-05 23:58:36.668
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.emf.ecore.xmi [166]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.9.0,4.0.0)"; resolution:="optional"; x-installation:="greedy"
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.ecore; bundle-version="[2.37.0,3.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 4 0 2024-12-05 23:58:36.668
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.equinox.p2.artifact.repository [192]
+  Unresolved requirement: Import-Package: org.bouncycastle.bcpg; version="1.65.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2024-12-05 23:58:36.668
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.equinox.p2.core [194]
+  Unresolved requirement: Import-Package: org.bouncycastle.bcpg; version="1.65.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 0 2024-12-05 23:58:36.668
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.equinox.p2.engine [200]
+  Unresolved requirement: Import-Package: org.bouncycastle.openpgp; version="1.65.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.equinox.p2.metadata 4 0 2024-12-05 23:58:36.677
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.equinox.p2.metadata [204]
+  Unresolved requirement: Require-Bundle: org.eclipse.equinox.p2.core; bundle-version="[2.0.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.equinox.p2.core; bundle-version="2.12.100.v20240702-1335"; singleton:="true"
+       org.eclipse.equinox.p2.core [194]
+         Unresolved requirement: Import-Package: org.bouncycastle.bcpg; version="1.65.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2024-12-05 23:58:36.678
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.equinox.p2.repository [210]
+  Unresolved requirement: Import-Package: org.bouncycastle; version="1.72.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.equinox.p2.ui 4 0 2024-12-05 23:58:36.678
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.equinox.p2.ui [215]
+  Unresolved requirement: Import-Package: org.bouncycastle.bcpg; version="1.65.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.equinox.p2.ui.sdk.scheduler 4 0 2024-12-05 23:58:36.678
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.equinox.p2.ui.sdk.scheduler [219]
+  Unresolved requirement: Import-Package: org.eclipse.equinox.internal.p2.engine.phases
+    -> Export-Package: org.eclipse.equinox.internal.p2.engine.phases; bundle-symbolic-name="org.eclipse.equinox.p2.engine"; bundle-version="2.10.200.v20240425-1316"; version="0.0.0"; x-friends:="org.eclipse.equinox.p2.director.app,  org.eclipse.equinox.p2.repository.tools,  org.eclipse.equinox.p2.ui,  org.eclipse.equinox.p2.ui.sdk,  org.eclipse.equinox.p2.ui.sdk.scheduler,  org.eclipse.equinox.p2.touchpoint.eclipse"
+       org.eclipse.equinox.p2.engine [200]
+         Unresolved requirement: Import-Package: org.bouncycastle.openpgp; version="1.65.0"
+  Unresolved requirement: Import-Package: org.eclipse.equinox.internal.p2.core.helpers
+    -> Export-Package: org.eclipse.equinox.internal.p2.core.helpers; bundle-symbolic-name="org.eclipse.equinox.p2.core"; bundle-version="2.12.100.v20240702-1335"; version="0.0.0"; x-friends:="org.eclipse.equinox.frameworkadmin.test,  org.eclipse.equinox.p2.examples.rcp.prestartupdate,  org.eclipse.equinox.p2.artifact.optimizers,  org.eclipse.equinox.p2.artifact.processors,  org.eclipse.equinox.p2.artifact.repository,  org.eclipse.equinox.p2.console,  org.eclipse.equinox.p2.director,  org.eclipse.equinox.p2.director.app,  org.eclipse.equinox.p2.directorywatcher,  org.eclipse.equinox.p2.download,  org.eclipse.equinox.p2.engine,  org.eclipse.equinox.p2.extensionlocation,  org.eclipse.equinox.p2.garbagecollector,  org.eclipse.equinox.p2.installer,  org.eclipse.equinox.p2.metadata,  org.eclipse.equinox.p2.metadata.repository,  org.eclipse.equinox.p2.operations,  org.eclipse.equinox.p2.publisher,  org.eclipse.equinox.p2.publisher.eclipse,  org.eclipse.equinox.p2.reconciler.dropins,  org.eclipse.equinox.p2.repository,  org.eclipse.equinox.p2.repository.tools,  org.eclipse.equinox.p2.repositoryoptimizer,  org.eclipse.equinox.p2.touchpoint.eclipse,  org.eclipse.equinox.p2.touchpoint.natives,  org.eclipse.equinox.p2.ui,  org.eclipse.equinox.p2.ui.admin,  org.eclipse.equinox.p2.ui.sdk,  org.eclipse.equinox.p2.ui.sdk.scheduler,  org.eclipse.equinox.p2.updatechecker,  org.eclipse.equinox.p2.updatechecker.app,  org.eclipse.equinox.p2.updatesite,  org.eclipse.equinox.p2.transport.ecf,  org.eclipse.equinox.p2.discovery.compatibility,  org.eclipse.equinox.p2.ui.discovery,  org.eclipse.equinox.p2.discovery"
+       org.eclipse.equinox.p2.core [194]
+         Unresolved requirement: Import-Package: org.bouncycastle.bcpg; version="1.65.0"
+  Unresolved requirement: Import-Package: org.eclipse.equinox.internal.p2.engine
+    -> Export-Package: org.eclipse.equinox.internal.p2.engine; bundle-symbolic-name="org.eclipse.equinox.p2.engine"; bundle-version="2.10.200.v20240425-1316"; version="0.0.0"; x-friends:="org.eclipse.equinox.p2.garbagecollector,  org.eclipse.equinox.p2.repository.tools,  org.eclipse.equinox.p2.touchpoint.eclipse,  org.eclipse.equinox.p2.touchpoint.natives,  org.eclipse.equinox.p2.ui.sdk.scheduler,  org.eclipse.pde.build,  org.eclipse.equinox.p2.director.app"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.equinox.p2.updatechecker 4 0 2024-12-05 23:58:36.678
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.equinox.p2.updatechecker [220]
+  Unresolved requirement: Import-Package: org.eclipse.equinox.p2.core; version="[2.0.0,3.0.0)"
+    -> Export-Package: org.eclipse.equinox.p2.core; bundle-symbolic-name="org.eclipse.equinox.p2.core"; bundle-version="2.12.100.v20240702-1335"; version="2.12.0"; uses:="org.eclipse.core.runtime"
+       org.eclipse.equinox.p2.core [194]
+         Unresolved requirement: Import-Package: org.bouncycastle.bcpg; version="1.65.0"
+  Unresolved requirement: Import-Package: org.eclipse.equinox.internal.p2.core.helpers
+    -> Export-Package: org.eclipse.equinox.internal.p2.core.helpers; bundle-symbolic-name="org.eclipse.equinox.p2.core"; bundle-version="2.12.100.v20240702-1335"; version="0.0.0"; x-friends:="org.eclipse.equinox.frameworkadmin.test,  org.eclipse.equinox.p2.examples.rcp.prestartupdate,  org.eclipse.equinox.p2.artifact.optimizers,  org.eclipse.equinox.p2.artifact.processors,  org.eclipse.equinox.p2.artifact.repository,  org.eclipse.equinox.p2.console,  org.eclipse.equinox.p2.director,  org.eclipse.equinox.p2.director.app,  org.eclipse.equinox.p2.directorywatcher,  org.eclipse.equinox.p2.download,  org.eclipse.equinox.p2.engine,  org.eclipse.equinox.p2.extensionlocation,  org.eclipse.equinox.p2.garbagecollector,  org.eclipse.equinox.p2.installer,  org.eclipse.equinox.p2.metadata,  org.eclipse.equinox.p2.metadata.repository,  org.eclipse.equinox.p2.operations,  org.eclipse.equinox.p2.publisher,  org.eclipse.equinox.p2.publisher.eclipse,  org.eclipse.equinox.p2.reconciler.dropins,  org.eclipse.equinox.p2.repository,  org.eclipse.equinox.p2.repository.tools,  org.eclipse.equinox.p2.repositoryoptimizer,  org.eclipse.equinox.p2.touchpoint.eclipse,  org.eclipse.equinox.p2.touchpoint.natives,  org.eclipse.equinox.p2.ui,  org.eclipse.equinox.p2.ui.admin,  org.eclipse.equinox.p2.ui.sdk,  org.eclipse.equinox.p2.ui.sdk.scheduler,  org.eclipse.equinox.p2.updatechecker,  org.eclipse.equinox.p2.updatechecker.app,  org.eclipse.equinox.p2.updatesite,  org.eclipse.equinox.p2.transport.ecf,  org.eclipse.equinox.p2.discovery.compatibility,  org.eclipse.equinox.p2.ui.discovery,  org.eclipse.equinox.p2.discovery"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.jdt.bcoview 4 0 2024-12-05 23:58:36.678
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.bcoview [238]
+  Unresolved requirement: Import-Package: org.objectweb.asm.tree.analysis; version="9.4.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.jdt.core 4 0 2024-12-05 23:58:36.678
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.core [239]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.core.resources; bundle-version="[3.21.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.core.resources; bundle-version="3.21.0.v20240805-1607"; singleton:="true"
+       org.eclipse.core.resources [110]
+         Unresolved requirement: Require-Bundle: org.eclipse.ant.core; bundle-version="[3.1.0,4.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.filesystem; bundle-version="[1.10.0,2.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.expressions; bundle-version="[3.9.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+              org.eclipse.core.expressions [104]
+                Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 0 2024-12-05 23:58:36.678
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.core.manipulation [242]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.31.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.jdt.debug 4 0 2024-12-05 23:58:36.678
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.debug [243]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.debug.core; bundle-version="[3.21.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.debug.core; bundle-version="3.21.500.v20240801-2219"; singleton:="true"
+       org.eclipse.debug.core [113]
+         Unresolved requirement: Require-Bundle: org.eclipse.core.resources; bundle-version="[3.18.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.core.resources; bundle-version="3.21.0.v20240805-1607"; singleton:="true"
+              org.eclipse.core.resources [110]
+                Unresolved requirement: Require-Bundle: org.eclipse.ant.core; bundle-version="[3.1.0,4.0.0)"; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.eclipse.core.filesystem; bundle-version="[1.10.0,2.0.0)"
+                Unresolved requirement: Require-Bundle: org.eclipse.core.expressions; bundle-version="[3.9.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+                     org.eclipse.core.expressions [104]
+                       Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.core.resources; bundle-version="[3.19.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.core.resources; bundle-version="3.21.0.v20240805-1607"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.core; bundle-version="[3.34.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jdt.core; bundle-version="3.39.0.v20240807-1632"; singleton:="true"
+       org.eclipse.jdt.core [239]
+         Unresolved requirement: Require-Bundle: org.eclipse.core.resources; bundle-version="[3.21.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.core.resources; bundle-version="3.21.0.v20240805-1607"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.jdt.junit 4 0 2024-12-05 23:58:36.678
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.junit [246]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench.texteditor; bundle-version="[3.17.0,4.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.ide; bundle-version="[3.21.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.ui.ide; bundle-version="3.22.300.v20240828-1234"; singleton:="true"
+       org.eclipse.ui.ide [449]
+         Unresolved requirement: Import-Package: jakarta.annotation; version="[2.1.0,3.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.jface.text; bundle-version="[3.24.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jface.text; bundle-version="3.25.200.v20240816-1151"
+       org.eclipse.jface.text [266]
+         Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.views; bundle-version="[3.12.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.ui.views; bundle-version="3.12.400.v20240620-1945"; singleton:="true"
+       org.eclipse.ui.views [459]
+         Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2024-12-05 23:58:36.688
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.ui [252]
+  Unresolved requirement: Require-Bundle: org.eclipse.help; bundle-version="[3.4.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.jgit 4 0 2024-12-05 23:58:36.688
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jgit [267]
+  Unresolved requirement: Import-Package: com.googlecode.javaewah; version="[1.1.6,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.ltk.core.refactoring 4 0 2024-12-05 23:58:36.688
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ltk.core.refactoring [278]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.ltk.ui.refactoring 4 0 2024-12-05 23:58:36.688
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ltk.ui.refactoring [279]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.m2e.core.ui 4 0 2024-12-05 23:58:36.691
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.core.ui [289]
+  Unresolved requirement: Import-Package: org.apache.maven.archetype.catalog; provider="m2e"; version="[3.2.1,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.m2e.refactoring 4 0 2024-12-05 23:58:36.691
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.refactoring [302]
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.core; bundle-version="[2.0.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.m2e.sourcelookup 4 0 2024-12-05 23:58:36.691
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.sourcelookup [304]
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.core; bundle-version="[2.0.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.m2e.sourcelookup.ui 4 0 2024-12-05 23:58:36.691
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.sourcelookup.ui [305]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+    -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.206.100.v20240720-1232"; singleton:="true"
+       org.eclipse.ui [441]
+         Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.mylyn.commons.core 4 0 2024-12-05 23:58:36.691
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.core [310]
+  Unresolved requirement: Import-Package: org.apache.commons.text; version="[1.12.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.mylyn.commons.net 4 0 2024-12-05 23:58:36.691
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.net [313]
+  Unresolved requirement: Import-Package: org.apache.commons.httpclient; version="3.1.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.mylyn.commons.notifications.ui 4 0 2024-12-05 23:58:36.691
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.notifications.ui [316]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.mylyn.commons.ui 4 0 2024-12-05 23:58:36.691
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.ui [321]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.mylyn.commons.workbench 4 0 2024-12-05 23:58:36.698
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.workbench [322]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="0.0.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.core.expressions; bundle-version="0.0.0"
+    -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+       org.eclipse.core.expressions [104]
+         Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.mylyn.context.core 4 0 2024-12-05 23:58:36.698
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.context.core [324]
+  Unresolved requirement: Import-Package: org.apache.commons.io; version="[1.4.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.mylyn.github.ui 4 0 2024-12-05 23:58:36.698
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.github.ui [333]
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.op; version="[6.2.0,8.0.0)"
+    -> Export-Package: org.eclipse.egit.core.op; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="7.0.0.202409031743-r"; version="7.0.0"; x-friends:="org.eclipse.egit.ui.test,  org.eclipse.egit.ui,  org.eclipse.egit.gitflow,  org.eclipse.egit.gitflow.test,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.github.core,  org.eclipse.egit.core.junit"
+       org.eclipse.egit.core [156]
+         Unresolved requirement: Import-Package: org.bouncycastle.jce.provider; version="[1.77.0,2.0.0)"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core; version="[6.2.0,8.0.0)"
+    -> Export-Package: org.eclipse.egit.core; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="7.0.0.202409031743-r"; version="7.0.0"; x-friends:="org.eclipse.egit.ui,  org.eclipse.egit.ui.test,  org.eclipse.egit.gitflow.test,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.core.junit"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.mylyn.ide.ui 4 0 2024-12-05 23:58:36.698
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.ide.ui [336]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="0.0.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.ui; bundle-version="0.0.0"
+    -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.206.100.v20240720-1232"; singleton:="true"
+       org.eclipse.ui [441]
+         Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.core.resources; bundle-version="0.0.0"
+    -> Bundle-SymbolicName: org.eclipse.core.resources; bundle-version="3.21.0.v20240805-1607"; singleton:="true"
+       org.eclipse.core.resources [110]
+         Unresolved requirement: Require-Bundle: org.eclipse.ant.core; bundle-version="[3.1.0,4.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.filesystem; bundle-version="[1.10.0,2.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.expressions; bundle-version="[3.9.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+              org.eclipse.core.expressions [104]
+                Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.mylyn.java.ui 4 0 2024-12-05 23:58:36.698
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.java.ui [338]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="0.0.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.core.resources; bundle-version="0.0.0"
+    -> Bundle-SymbolicName: org.eclipse.core.resources; bundle-version="3.21.0.v20240805-1607"; singleton:="true"
+       org.eclipse.core.resources [110]
+         Unresolved requirement: Require-Bundle: org.eclipse.ant.core; bundle-version="[3.1.0,4.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.filesystem; bundle-version="[1.10.0,2.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.expressions; bundle-version="[3.9.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+              org.eclipse.core.expressions [104]
+                Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.mylyn.monitor.ui 4 0 2024-12-05 23:58:36.698
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.monitor.ui [342]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.mylyn.resources.ui 4 0 2024-12-05 23:58:36.708
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.resources.ui [343]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.expressions; bundle-version="0.0.0"
+    -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+       org.eclipse.core.expressions [104]
+         Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.compare; bundle-version="0.0.0"
+    -> Bundle-SymbolicName: org.eclipse.compare; bundle-version="3.11.100.v20240810-1416"; singleton:="true"
+       org.eclipse.compare [95]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench.texteditor; bundle-version="[3.5.0,4.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.views; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ui.views; bundle-version="3.12.400.v20240620-1945"; singleton:="true"
+              org.eclipse.ui.views [459]
+                Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.ide; bundle-version="[3.3.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ui.ide; bundle-version="3.22.300.v20240828-1234"; singleton:="true"
+              org.eclipse.ui.ide [449]
+                Unresolved requirement: Import-Package: jakarta.annotation; version="[2.1.0,3.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.ui; bundle-version="[3.206.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.206.100.v20240720-1232"; singleton:="true"
+              org.eclipse.ui [441]
+                Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.resources; bundle-version="[3.4.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.core.resources; bundle-version="3.21.0.v20240805-1607"; singleton:="true"
+              org.eclipse.core.resources [110]
+                Unresolved requirement: Require-Bundle: org.eclipse.ant.core; bundle-version="[3.1.0,4.0.0)"; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.eclipse.core.filesystem; bundle-version="[1.10.0,2.0.0)"
+                Unresolved requirement: Require-Bundle: org.eclipse.core.expressions; bundle-version="[3.9.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jface.text; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jface.text; bundle-version="3.25.200.v20240816-1151"
+              org.eclipse.jface.text [266]
+                Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.mylyn.tasks.index.core 4 0 2024-12-05 23:58:36.708
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.tasks.index.core [351]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="0.0.0"
+  Unresolved requirement: Import-Package: org.apache.lucene.queryparser.classic; version="9.10.0"
+    -> Export-Package: org.apache.lucene.queryparser.classic; bundle-symbolic-name="org.apache.lucene.queryparser"; bundle-version="9.11.1.v20240628-1000"; version="9.11.1"; uses:="org.apache.lucene.analysis,org.apache.lucene.document,org.apache.lucene.index,org.apache.lucene.queryparser.charstream,org.apache.lucene.queryparser.flexible.standard,org.apache.lucene.search,org.apache.lucene.util"
+       org.apache.lucene.queryparser [73]
+         Unresolved requirement: Import-Package: org.apache.lucene.queries.intervals; version="[9.11.0,10.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.mylyn.tasks.ui 4 0 2024-12-05 23:58:36.708
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.tasks.ui [354]
+  Unresolved requirement: Import-Package: net.bytebuddy.agent; version="[1.14.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.oomph.p2.core 4 0 2024-12-05 23:58:36.708
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.oomph.p2.core [387]
+  Unresolved requirement: Import-Package: org.bouncycastle.bcpg; version="[1.65.0,2.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.oomph.p2.ui 4 0 2024-12-05 23:58:36.708
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.oomph.p2.ui [390]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.24.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.oomph.setup 4 0 2024-12-05 23:58:36.708
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.oomph.setup [396]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.24.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.oomph.setup.core 4 0 2024-12-05 23:58:36.708
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.oomph.setup.core [397]
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.cookie; version="[5.1.3,6.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.oomph.setup.p2 4 0 2024-12-05 23:58:36.708
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.oomph.setup.p2 [401]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.24.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.oomph.setup.ui 4 0 2024-12-05 23:58:36.708
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.oomph.setup.ui [404]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.24.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.oomph.ui 4 0 2024-12-05 23:58:36.708
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.oomph.ui [406]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.24.0,4.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.core.expressions; bundle-version="[3.4.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+       org.eclipse.core.expressions [104]
+         Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.search 4 0 2024-12-05 23:58:36.718
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.search [416]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.team.core 4 0 2024-12-05 23:58:36.718
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.team.core [420]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.core.resources; bundle-version="[3.17.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.core.resources; bundle-version="3.21.0.v20240805-1607"; singleton:="true"
+       org.eclipse.core.resources [110]
+         Unresolved requirement: Require-Bundle: org.eclipse.ant.core; bundle-version="[3.1.0,4.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.filesystem; bundle-version="[1.10.0,2.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.expressions; bundle-version="[3.9.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+              org.eclipse.core.expressions [104]
+                Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.team.ui 4 0 2024-12-05 23:58:36.718
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.team.ui [422]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.ide; bundle-version="[3.3.0,4.0.0)"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.ui.ide; bundle-version="3.22.300.v20240828-1234"; singleton:="true"
+       org.eclipse.ui.ide [449]
+         Unresolved requirement: Import-Package: jakarta.annotation; version="[2.1.0,3.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.core.resources; bundle-version="[3.3.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.core.resources; bundle-version="3.21.0.v20240805-1607"; singleton:="true"
+       org.eclipse.core.resources [110]
+         Unresolved requirement: Require-Bundle: org.eclipse.ant.core; bundle-version="[3.1.0,4.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.filesystem; bundle-version="[1.10.0,2.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.expressions; bundle-version="[3.9.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+              org.eclipse.core.expressions [104]
+                Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.tm.terminal.connector.local 4 0 2024-12-05 23:58:36.718
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tm.terminal.connector.local [429]
+  Unresolved requirement: Import-Package: org.eclipse.cdt.utils.pty; mandatory:="native"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.tm.terminal.control 4 0 2024-12-05 23:58:36.718
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tm.terminal.control [433]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.tm.terminal.view.ui 4 0 2024-12-05 23:58:36.718
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tm.terminal.view.ui [435]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="3.8.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.core.expressions; bundle-version="3.4.400"
+    -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+       org.eclipse.core.expressions [104]
+         Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.ui 4 0 2024-12-05 23:58:36.718
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ui [441]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.ui.editors 4 0 2024-12-05 23:58:36.724
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ui.editors [445]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.ui.genericeditor 4 0 2024-12-05 23:58:36.724
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ui.genericeditor [448]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench.texteditor; bundle-version="3.10.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.ui.ide 4 0 2024-12-05 23:58:36.727
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ui.ide [449]
+  Unresolved requirement: Import-Package: jakarta.annotation; version="[2.1.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.ui.navigator 4 0 2024-12-05 23:58:36.727
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ui.navigator [455]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.ui.navigator.resources 4 0 2024-12-05 23:58:36.727
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ui.navigator.resources [456]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.ui; bundle-version="[3.204.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.206.100.v20240720-1232"; singleton:="true"
+       org.eclipse.ui [441]
+         Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.ide; bundle-version="[3.21.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.ui.ide; bundle-version="3.22.300.v20240828-1234"; singleton:="true"
+       org.eclipse.ui.ide [449]
+         Unresolved requirement: Import-Package: jakarta.annotation; version="[2.1.0,3.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.core.resources; bundle-version="[3.19.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.core.resources; bundle-version="3.21.0.v20240805-1607"; singleton:="true"
+       org.eclipse.core.resources [110]
+         Unresolved requirement: Require-Bundle: org.eclipse.ant.core; bundle-version="[3.1.0,4.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.filesystem; bundle-version="[1.10.0,2.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.expressions; bundle-version="[3.9.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+              org.eclipse.core.expressions [104]
+                Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.navigator; bundle-version="[3.12.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.ui.navigator; bundle-version="3.12.500.v20240620-1945"; singleton:="true"
+       org.eclipse.ui.navigator [455]
+         Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2024-12-05 23:58:36.727
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ui.workbench [463]
+  Unresolved requirement: Import-Package: jakarta.annotation; version="[2.1.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.ui.themes 4 0 2024-12-05 23:58:36.727
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ui.themes [458]
+  Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.css.swt.theme
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2007)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.e4.core.di 2 0 2024-12-05 23:58:36.738
+!MESSAGE Could not resolve module: org.eclipse.e4.core.di [118]
+  Unresolved requirement: Import-Package: jakarta.annotation; version="[2.0.0,3.0.0)"
+
+
+!ENTRY org.eclipse.ui.themes 2 0 2024-12-05 23:58:36.738
+!MESSAGE Could not resolve module: org.eclipse.ui.themes [458]
+  Unresolved requirement: Require-Bundle: org.eclipse.e4.ui.css.swt.theme
+
+
+!ENTRY org.eclipse.text 2 0 2024-12-05 23:58:36.738
+!MESSAGE Could not resolve module: org.eclipse.text [423]
+  Unresolved requirement: Require-Bundle: org.eclipse.equinox.preferences; bundle-version="[3.7.0,4.0.0)"
+
+
+!ENTRY org.eclipse.ui.editors 2 0 2024-12-05 23:58:36.738
+!MESSAGE Could not resolve module: org.eclipse.ui.editors [445]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+
+!ENTRY org.eclipse.m2e.core.ui 2 0 2024-12-05 23:58:36.738
+!MESSAGE Could not resolve module: org.eclipse.m2e.core.ui [289]
+  Unresolved requirement: Import-Package: org.apache.maven.archetype.catalog; provider="m2e"; version="[3.2.1,4.0.0)"
+
+
+!ENTRY org.eclipse.emf.ecore.xmi 2 0 2024-12-05 23:58:36.738
+!MESSAGE Could not resolve module: org.eclipse.emf.ecore.xmi [166]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.9.0,4.0.0)"; resolution:="optional"; x-installation:="greedy"
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.ecore; bundle-version="[2.37.0,3.0.0)"; visibility:="reexport"
+
+
+!ENTRY org.eclipse.search 2 0 2024-12-05 23:58:36.738
+!MESSAGE Could not resolve module: org.eclipse.search [416]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+
+!ENTRY org.eclipse.e4.core.di.extensions.supplier 2 0 2024-12-05 23:58:36.738
+!MESSAGE Could not resolve module: org.eclipse.e4.core.di.extensions.supplier [121]
+  Unresolved requirement: Import-Package: jakarta.annotation; version="[2.1.0,3.0.0)"
+
+
+!ENTRY org.eclipse.core.resources 2 0 2024-12-05 23:58:36.748
+!MESSAGE Could not resolve module: org.eclipse.core.resources [110]
+  Unresolved requirement: Require-Bundle: org.eclipse.ant.core; bundle-version="[3.1.0,4.0.0)"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.core.filesystem; bundle-version="[1.10.0,2.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.core.expressions; bundle-version="[3.9.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+       org.eclipse.core.expressions [104]
+         Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+
+!ENTRY org.eclipse.mylyn.commons.ui 2 0 2024-12-05 23:58:36.748
+!MESSAGE Could not resolve module: org.eclipse.mylyn.commons.ui [321]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="0.0.0"
+
+
+!ENTRY org.eclipse.compare 2 0 2024-12-05 23:58:36.748
+!MESSAGE Could not resolve module: org.eclipse.compare [95]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench.texteditor; bundle-version="[3.5.0,4.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.views; bundle-version="[3.2.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.ui.views; bundle-version="3.12.400.v20240620-1945"; singleton:="true"
+       org.eclipse.ui.views [459]
+         Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.ide; bundle-version="[3.3.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.ui.ide; bundle-version="3.22.300.v20240828-1234"; singleton:="true"
+       org.eclipse.ui.ide [449]
+         Unresolved requirement: Import-Package: jakarta.annotation; version="[2.1.0,3.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.ui; bundle-version="[3.206.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.206.100.v20240720-1232"; singleton:="true"
+       org.eclipse.ui [441]
+         Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.core.resources; bundle-version="[3.4.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.core.resources; bundle-version="3.21.0.v20240805-1607"; singleton:="true"
+       org.eclipse.core.resources [110]
+         Unresolved requirement: Require-Bundle: org.eclipse.ant.core; bundle-version="[3.1.0,4.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.filesystem; bundle-version="[1.10.0,2.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.expressions; bundle-version="[3.9.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+              org.eclipse.core.expressions [104]
+                Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.jface.text; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jface.text; bundle-version="3.25.200.v20240816-1151"
+       org.eclipse.jface.text [266]
+         Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+
+!ENTRY org.eclipse.m2e.refactoring 2 0 2024-12-05 23:58:36.748
+!MESSAGE Could not resolve module: org.eclipse.m2e.refactoring [302]
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.core; bundle-version="[2.0.0,3.0.0)"
+
+
+!ENTRY org.eclipse.oomph.p2.core 2 0 2024-12-05 23:58:36.748
+!MESSAGE Could not resolve module: org.eclipse.oomph.p2.core [387]
+  Unresolved requirement: Import-Package: org.bouncycastle.bcpg; version="[1.65.0,2.0.0)"
+
+
+!ENTRY org.eclipse.e4.core.di.extensions 2 0 2024-12-05 23:58:36.748
+!MESSAGE Could not resolve module: org.eclipse.e4.core.di.extensions [120]
+  Unresolved requirement: Import-Package: jakarta.inject; version="[2.0.0,3.0.0)"
+
+
+!ENTRY org.eclipse.ui.views 2 0 2024-12-05 23:58:36.748
+!MESSAGE Could not resolve module: org.eclipse.ui.views [459]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+
+!ENTRY org.eclipse.mylyn.monitor.core 2 0 2024-12-05 23:58:36.748
+!MESSAGE Could not resolve module: org.eclipse.mylyn.monitor.core [341]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="0.0.0"
+
+
+!ENTRY org.eclipse.tm.terminal.connector.local 2 0 2024-12-05 23:58:36.748
+!MESSAGE Could not resolve module: org.eclipse.tm.terminal.connector.local [429]
+  Unresolved requirement: Import-Package: org.eclipse.cdt.utils.pty; mandatory:="native"
+
+
+!ENTRY org.eclipse.equinox.launcher.win32.win32.x86_64 2 0 2024-12-05 23:58:36.748
+!MESSAGE Could not resolve module: org.eclipse.equinox.launcher.win32.win32.x86_64 [191]
+  Unresolved requirement: Fragment-Host: org.eclipse.equinox.launcher; bundle-version="[1.6.0,1.7.0)"
+  Unresolved requirement: Fragment-Host: org.eclipse.equinox.launcher; bundle-version="[1.6.0,1.7.0)"
+
+
+!ENTRY org.eclipse.m2e.sourcelookup 2 0 2024-12-05 23:58:36.754
+!MESSAGE Could not resolve module: org.eclipse.m2e.sourcelookup [304]
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.core; bundle-version="[2.0.0,3.0.0)"
+
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-12-05 23:58:36.754
+!MESSAGE Could not resolve module: org.eclipse.egit.ui [159]
+  Unresolved requirement: Import-Package: org.eclipse.egit.core; version="[7.0.0,7.1.0)"
+    -> Export-Package: org.eclipse.egit.core; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="7.0.0.202409031743-r"; version="7.0.0"; x-friends:="org.eclipse.egit.ui,  org.eclipse.egit.ui.test,  org.eclipse.egit.gitflow.test,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.core.junit"
+       org.eclipse.egit.core [156]
+         Unresolved requirement: Import-Package: org.bouncycastle.jce.provider; version="[1.77.0,2.0.0)"
+
+
+!ENTRY org.eclipse.e4.ui.css.swt 2 0 2024-12-05 23:58:36.754
+!MESSAGE Could not resolve module: org.eclipse.e4.ui.css.swt [126]
+  Unresolved requirement: Import-Package: org.w3c.css.sac; version="1.3.0"
+
+
+!ENTRY org.eclipse.ui.win32 2 0 2024-12-05 23:58:36.754
+!MESSAGE Could not resolve module: org.eclipse.ui.win32 [462]
+  Unresolved requirement: Fragment-Host: org.eclipse.ui.ide; bundle-version="[3.2.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.ui.ide; bundle-version="3.22.300.v20240828-1234"; singleton:="true"
+       org.eclipse.ui.ide [449]
+         Unresolved requirement: Import-Package: jakarta.annotation; version="[2.1.0,3.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.core.resources; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.core.resources; bundle-version="3.21.0.v20240805-1607"; singleton:="true"
+       org.eclipse.core.resources [110]
+         Unresolved requirement: Require-Bundle: org.eclipse.ant.core; bundle-version="[3.1.0,4.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.filesystem; bundle-version="[1.10.0,2.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.expressions; bundle-version="[3.9.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+              org.eclipse.core.expressions [104]
+                Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+
+!ENTRY org.eclipse.mylyn.java.ui 2 0 2024-12-05 23:58:36.754
+!MESSAGE Could not resolve module: org.eclipse.mylyn.java.ui [338]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.resources; bundle-version="0.0.0"
+    -> Bundle-SymbolicName: org.eclipse.core.resources; bundle-version="3.21.0.v20240805-1607"; singleton:="true"
+       org.eclipse.core.resources [110]
+         Unresolved requirement: Require-Bundle: org.eclipse.ant.core; bundle-version="[3.1.0,4.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.filesystem; bundle-version="[1.10.0,2.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.expressions; bundle-version="[3.9.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+              org.eclipse.core.expressions [104]
+                Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+
+!ENTRY org.eclipse.cdt.core.win32.x86_64 2 0 2024-12-05 23:58:36.754
+!MESSAGE Could not resolve module: org.eclipse.cdt.core.win32.x86_64 [94]
+  Unresolved requirement: Fragment-Host: org.eclipse.cdt.core.native; bundle-version="[6.3.0,7.0.0)"
+  Unresolved requirement: Fragment-Host: org.eclipse.cdt.core.native; bundle-version="[6.3.0,7.0.0)"
+
+
+!ENTRY org.eclipse.jdt.bcoview 2 0 2024-12-05 23:58:36.758
+!MESSAGE Could not resolve module: org.eclipse.jdt.bcoview [238]
+  Unresolved requirement: Import-Package: org.objectweb.asm.tree.analysis; version="9.4.0"
+
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-12-05 23:58:36.758
+!MESSAGE Could not resolve module: org.eclipse.equinox.p2.artifact.repository [192]
+  Unresolved requirement: Import-Package: org.bouncycastle.bcpg; version="1.65.0"
+
+
+!ENTRY org.eclipse.oomph.ui 2 0 2024-12-05 23:58:36.758
+!MESSAGE Could not resolve module: org.eclipse.oomph.ui [406]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.expressions; bundle-version="[3.4.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+       org.eclipse.core.expressions [104]
+         Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+
+!ENTRY org.eclipse.e4.core.services 2 0 2024-12-05 23:58:36.758
+!MESSAGE Could not resolve module: org.eclipse.e4.core.services [122]
+  Unresolved requirement: Import-Package: jakarta.annotation; version="[2.0.0,3.0.0)"
+
+
+!ENTRY org.eclipse.jdt.ui 2 0 2024-12-05 23:58:36.758
+!MESSAGE Could not resolve module: org.eclipse.jdt.ui [252]
+  Unresolved requirement: Require-Bundle: org.eclipse.help; bundle-version="[3.4.0,4.0.0)"
+
+
+!ENTRY org.eclipse.tm.terminal.control 2 0 2024-12-05 23:58:36.758
+!MESSAGE Could not resolve module: org.eclipse.tm.terminal.control [433]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime
+
+
+!ENTRY org.eclipse.oomph.p2.ui 2 0 2024-12-05 23:58:36.758
+!MESSAGE Could not resolve module: org.eclipse.oomph.p2.ui [390]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.24.0,4.0.0)"
+
+
+!ENTRY org.eclipse.buildship.ui 2 0 2024-12-05 23:58:36.758
+!MESSAGE Could not resolve module: org.eclipse.buildship.ui [91]
+  Unresolved requirement: Require-Bundle: org.eclipse.buildship.core
+    -> Bundle-SymbolicName: org.eclipse.buildship.core; bundle-version="3.1.9.v20240115-1636"; singleton:="true"
+       org.eclipse.buildship.core [90]
+         Unresolved requirement: Import-Package: org.slf4j; version="1.7.2"
+           -> Export-Package: org.slf4j; bundle-symbolic-name="slf4j.api"; bundle-version="2.0.16"; version="2.0.16"; uses:="org.slf4j.event,org.slf4j.helpers,org.slf4j.spi"
+              slf4j.api [519]
+                Unresolved requirement: Require-Capability: osgi.extender; filter:="(&(osgi.extender=osgi.serviceloader.processor)(version>=1.0.0)(!(version>=2.0.0)))"
+
+
+!ENTRY org.eclipse.oomph.setup.ui 2 0 2024-12-05 23:58:36.758
+!MESSAGE Could not resolve module: org.eclipse.oomph.setup.ui [404]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.24.0,4.0.0)"
+
+
+!ENTRY org.eclipse.ltk.core.refactoring 2 0 2024-12-05 23:58:36.758
+!MESSAGE Could not resolve module: org.eclipse.ltk.core.refactoring [278]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+
+!ENTRY org.eclipse.mylyn.monitor.ui 2 0 2024-12-05 23:58:36.758
+!MESSAGE Could not resolve module: org.eclipse.mylyn.monitor.ui [342]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="0.0.0"
+
+
+!ENTRY org.eclipse.ui.navigator 2 0 2024-12-05 23:58:36.758
+!MESSAGE Could not resolve module: org.eclipse.ui.navigator [455]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+
+!ENTRY org.eclipse.ui.forms 2 0 2024-12-05 23:58:36.758
+!MESSAGE Could not resolve module: org.eclipse.ui.forms [447]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+
+!ENTRY org.eclipse.e4.ui.workbench.addons.swt 2 0 2024-12-05 23:58:36.758
+!MESSAGE Could not resolve module: org.eclipse.e4.ui.workbench.addons.swt [137]
+  Unresolved requirement: Import-Package: jakarta.annotation; version="[2.1.0,3.0.0)"
+
+
+!ENTRY org.eclipse.tm.terminal.view.ui 2 0 2024-12-05 23:58:36.758
+!MESSAGE Could not resolve module: org.eclipse.tm.terminal.view.ui [435]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.expressions; bundle-version="3.4.400"
+    -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+       org.eclipse.core.expressions [104]
+         Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+
+!ENTRY org.eclipse.team.ui 2 0 2024-12-05 23:58:36.758
+!MESSAGE Could not resolve module: org.eclipse.team.ui [422]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.ide; bundle-version="[3.3.0,4.0.0)"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.ui.ide; bundle-version="3.22.300.v20240828-1234"; singleton:="true"
+       org.eclipse.ui.ide [449]
+         Unresolved requirement: Import-Package: jakarta.annotation; version="[2.1.0,3.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.core.resources; bundle-version="[3.3.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.core.resources; bundle-version="3.21.0.v20240805-1607"; singleton:="true"
+       org.eclipse.core.resources [110]
+         Unresolved requirement: Require-Bundle: org.eclipse.ant.core; bundle-version="[3.1.0,4.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.filesystem; bundle-version="[1.10.0,2.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.expressions; bundle-version="[3.9.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+              org.eclipse.core.expressions [104]
+                Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2024-12-05 23:58:36.758
+!MESSAGE Could not resolve module: org.eclipse.mylyn.tasks.ui [354]
+  Unresolved requirement: Import-Package: net.bytebuddy.agent; version="[1.14.0,2.0.0)"
+
+
+!ENTRY org.eclipse.mylyn.ide.ui 2 0 2024-12-05 23:58:36.768
+!MESSAGE Could not resolve module: org.eclipse.mylyn.ide.ui [336]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.resources; bundle-version="0.0.0"
+    -> Bundle-SymbolicName: org.eclipse.core.resources; bundle-version="3.21.0.v20240805-1607"; singleton:="true"
+       org.eclipse.core.resources [110]
+         Unresolved requirement: Require-Bundle: org.eclipse.ant.core; bundle-version="[3.1.0,4.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.filesystem; bundle-version="[1.10.0,2.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.expressions; bundle-version="[3.9.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+              org.eclipse.core.expressions [104]
+                Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+
+!ENTRY org.eclipse.oomph.setup.p2 2 0 2024-12-05 23:58:36.768
+!MESSAGE Could not resolve module: org.eclipse.oomph.setup.p2 [401]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.24.0,4.0.0)"
+
+
+!ENTRY org.eclipse.debug.core 2 0 2024-12-05 23:58:36.770
+!MESSAGE Could not resolve module: org.eclipse.debug.core [113]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.resources; bundle-version="[3.18.0,4.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.core.resources; bundle-version="3.21.0.v20240805-1607"; singleton:="true"
+       org.eclipse.core.resources [110]
+         Unresolved requirement: Require-Bundle: org.eclipse.ant.core; bundle-version="[3.1.0,4.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.filesystem; bundle-version="[1.10.0,2.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.expressions; bundle-version="[3.9.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+              org.eclipse.core.expressions [104]
+                Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-12-05 23:58:36.770
+!MESSAGE Could not resolve module: org.eclipse.equinox.p2.repository [210]
+  Unresolved requirement: Import-Package: org.bouncycastle; version="1.72.0"
+
+
+!ENTRY org.eclipse.equinox.p2.metadata 2 0 2024-12-05 23:58:36.770
+!MESSAGE Could not resolve module: org.eclipse.equinox.p2.metadata [204]
+  Unresolved requirement: Require-Bundle: org.eclipse.equinox.p2.core; bundle-version="[2.0.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.equinox.p2.core; bundle-version="2.12.100.v20240702-1335"; singleton:="true"
+       org.eclipse.equinox.p2.core [194]
+         Unresolved requirement: Import-Package: org.bouncycastle.bcpg; version="1.65.0"
+
+
+!ENTRY org.eclipse.ui.workbench 2 0 2024-12-05 23:58:36.770
+!MESSAGE Could not resolve module: org.eclipse.ui.workbench [463]
+  Unresolved requirement: Import-Package: jakarta.annotation; version="[2.1.0,3.0.0)"
+
+
+!ENTRY org.eclipse.mylyn.commons.core 2 0 2024-12-05 23:58:36.770
+!MESSAGE Could not resolve module: org.eclipse.mylyn.commons.core [310]
+  Unresolved requirement: Import-Package: org.apache.commons.text; version="[1.12.0,2.0.0)"
+
+
+!ENTRY org.eclipse.mylyn.tasks.index.core 2 0 2024-12-05 23:58:36.770
+!MESSAGE Could not resolve module: org.eclipse.mylyn.tasks.index.core [351]
+  Unresolved requirement: Import-Package: org.apache.lucene.queryparser.classic; version="9.10.0"
+    -> Export-Package: org.apache.lucene.queryparser.classic; bundle-symbolic-name="org.apache.lucene.queryparser"; bundle-version="9.11.1.v20240628-1000"; version="9.11.1"; uses:="org.apache.lucene.analysis,org.apache.lucene.document,org.apache.lucene.index,org.apache.lucene.queryparser.charstream,org.apache.lucene.queryparser.flexible.standard,org.apache.lucene.search,org.apache.lucene.util"
+       org.apache.lucene.queryparser [73]
+         Unresolved requirement: Import-Package: org.apache.lucene.queries.intervals; version="[9.11.0,10.0.0)"
+
+
+!ENTRY org.eclipse.mylyn.commons.notifications.ui 2 0 2024-12-05 23:58:36.770
+!MESSAGE Could not resolve module: org.eclipse.mylyn.commons.notifications.ui [316]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="0.0.0"
+
+
+!ENTRY org.eclipse.mylyn.resources.ui 2 0 2024-12-05 23:58:36.770
+!MESSAGE Could not resolve module: org.eclipse.mylyn.resources.ui [343]
+  Unresolved requirement: Require-Bundle: org.eclipse.compare; bundle-version="0.0.0"
+    -> Bundle-SymbolicName: org.eclipse.compare; bundle-version="3.11.100.v20240810-1416"; singleton:="true"
+       org.eclipse.compare [95]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench.texteditor; bundle-version="[3.5.0,4.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.views; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ui.views; bundle-version="3.12.400.v20240620-1945"; singleton:="true"
+              org.eclipse.ui.views [459]
+                Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.ide; bundle-version="[3.3.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ui.ide; bundle-version="3.22.300.v20240828-1234"; singleton:="true"
+              org.eclipse.ui.ide [449]
+                Unresolved requirement: Import-Package: jakarta.annotation; version="[2.1.0,3.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.ui; bundle-version="[3.206.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.206.100.v20240720-1232"; singleton:="true"
+              org.eclipse.ui [441]
+                Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.resources; bundle-version="[3.4.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.core.resources; bundle-version="3.21.0.v20240805-1607"; singleton:="true"
+              org.eclipse.core.resources [110]
+                Unresolved requirement: Require-Bundle: org.eclipse.ant.core; bundle-version="[3.1.0,4.0.0)"; resolution:="optional"
+                Unresolved requirement: Require-Bundle: org.eclipse.core.filesystem; bundle-version="[1.10.0,2.0.0)"
+                Unresolved requirement: Require-Bundle: org.eclipse.core.expressions; bundle-version="[3.9.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+                     org.eclipse.core.expressions [104]
+                       Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.jface.text; bundle-version="[3.8.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jface.text; bundle-version="3.25.200.v20240816-1151"
+              org.eclipse.jface.text [266]
+                Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+
+!ENTRY org.eclipse.jgit 2 0 2024-12-05 23:58:36.770
+!MESSAGE Could not resolve module: org.eclipse.jgit [267]
+  Unresolved requirement: Import-Package: com.googlecode.javaewah; version="[1.1.6,2.0.0)"
+
+
+!ENTRY org.eclipse.mylyn.tasks.core 2 0 2024-12-05 23:58:36.778
+!MESSAGE Could not resolve module: org.eclipse.mylyn.tasks.core [350]
+  Unresolved requirement: Import-Package: org.apache.commons.httpclient.methods.multipart; version="3.1.0"
+
+
+!ENTRY org.eclipse.mylyn.tasks.search 2 0 2024-12-05 23:58:36.778
+!MESSAGE Could not resolve module: org.eclipse.mylyn.tasks.search [353]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="0.0.0"
+
+
+!ENTRY org.eclipse.jdt.junit 2 0 2024-12-05 23:58:36.778
+!MESSAGE Could not resolve module: org.eclipse.jdt.junit [246]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.ide; bundle-version="[3.21.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.ui.ide; bundle-version="3.22.300.v20240828-1234"; singleton:="true"
+       org.eclipse.ui.ide [449]
+         Unresolved requirement: Import-Package: jakarta.annotation; version="[2.1.0,3.0.0)"
+
+
+!ENTRY slf4j.api 2 0 2024-12-05 23:58:36.778
+!MESSAGE Could not resolve module: slf4j.api [519]
+  Unresolved requirement: Require-Capability: osgi.extender; filter:="(&(osgi.extender=osgi.serviceloader.processor)(version>=1.0.0)(!(version>=2.0.0)))"
+
+
+!ENTRY org.eclipse.jdt.core.manipulation 2 0 2024-12-05 23:58:36.778
+!MESSAGE Could not resolve module: org.eclipse.jdt.core.manipulation [242]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.31.0,4.0.0)"
+
+
+!ENTRY org.eclipse.mylyn.commons.net 2 0 2024-12-05 23:58:36.778
+!MESSAGE Could not resolve module: org.eclipse.mylyn.commons.net [313]
+  Unresolved requirement: Import-Package: org.apache.commons.httpclient; version="3.1.0"
+
+
+!ENTRY org.eclipse.equinox.p2.ui.sdk.scheduler 2 0 2024-12-05 23:58:36.778
+!MESSAGE Could not resolve module: org.eclipse.equinox.p2.ui.sdk.scheduler [219]
+  Unresolved requirement: Import-Package: org.eclipse.equinox.internal.p2.core.helpers
+    -> Export-Package: org.eclipse.equinox.internal.p2.core.helpers; bundle-symbolic-name="org.eclipse.equinox.p2.core"; bundle-version="2.12.100.v20240702-1335"; version="0.0.0"; x-friends:="org.eclipse.equinox.frameworkadmin.test,  org.eclipse.equinox.p2.examples.rcp.prestartupdate,  org.eclipse.equinox.p2.artifact.optimizers,  org.eclipse.equinox.p2.artifact.processors,  org.eclipse.equinox.p2.artifact.repository,  org.eclipse.equinox.p2.console,  org.eclipse.equinox.p2.director,  org.eclipse.equinox.p2.director.app,  org.eclipse.equinox.p2.directorywatcher,  org.eclipse.equinox.p2.download,  org.eclipse.equinox.p2.engine,  org.eclipse.equinox.p2.extensionlocation,  org.eclipse.equinox.p2.garbagecollector,  org.eclipse.equinox.p2.installer,  org.eclipse.equinox.p2.metadata,  org.eclipse.equinox.p2.metadata.repository,  org.eclipse.equinox.p2.operations,  org.eclipse.equinox.p2.publisher,  org.eclipse.equinox.p2.publisher.eclipse,  org.eclipse.equinox.p2.reconciler.dropins,  org.eclipse.equinox.p2.repository,  org.eclipse.equinox.p2.repository.tools,  org.eclipse.equinox.p2.repositoryoptimizer,  org.eclipse.equinox.p2.touchpoint.eclipse,  org.eclipse.equinox.p2.touchpoint.natives,  org.eclipse.equinox.p2.ui,  org.eclipse.equinox.p2.ui.admin,  org.eclipse.equinox.p2.ui.sdk,  org.eclipse.equinox.p2.ui.sdk.scheduler,  org.eclipse.equinox.p2.updatechecker,  org.eclipse.equinox.p2.updatechecker.app,  org.eclipse.equinox.p2.updatesite,  org.eclipse.equinox.p2.transport.ecf,  org.eclipse.equinox.p2.discovery.compatibility,  org.eclipse.equinox.p2.ui.discovery,  org.eclipse.equinox.p2.discovery"
+       org.eclipse.equinox.p2.core [194]
+         Unresolved requirement: Import-Package: org.bouncycastle.bcpg; version="1.65.0"
+
+
+!ENTRY org.eclipse.jdt.debug 2 0 2024-12-05 23:58:36.778
+!MESSAGE Could not resolve module: org.eclipse.jdt.debug [243]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.resources; bundle-version="[3.19.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.core.resources; bundle-version="3.21.0.v20240805-1607"; singleton:="true"
+       org.eclipse.core.resources [110]
+         Unresolved requirement: Require-Bundle: org.eclipse.ant.core; bundle-version="[3.1.0,4.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.filesystem; bundle-version="[1.10.0,2.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.expressions; bundle-version="[3.9.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+              org.eclipse.core.expressions [104]
+                Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+
+!ENTRY org.eclipse.m2e.logback 2 0 2024-12-05 23:58:36.778
+!MESSAGE Could not resolve module: org.eclipse.m2e.logback [296]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime
+  Unresolved requirement: Fragment-Host: ch.qos.logback.classic; bundle-version="[1.3.0,1.6.0)"
+    -> Bundle-SymbolicName: ch.qos.logback.classic; bundle-version="1.5.7"
+       ch.qos.logback.classic [7]
+         Unresolved requirement: Import-Package: jakarta.servlet; version="[5.0.0,6.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: jakarta.servlet.http; version="[5.0.0,6.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: org.slf4j; version="[2.0.0,3.0.0)"
+           -> Export-Package: org.slf4j; bundle-symbolic-name="slf4j.api"; bundle-version="2.0.16"; version="2.0.16"; uses:="org.slf4j.event,org.slf4j.helpers,org.slf4j.spi"
+              slf4j.api [519]
+                Unresolved requirement: Require-Capability: osgi.extender; filter:="(&(osgi.extender=osgi.serviceloader.processor)(version>=1.0.0)(!(version>=2.0.0)))"
+         Unresolved requirement: Import-Package: org.slf4j.event; version="[2.0.0,3.0.0)"
+           -> Export-Package: org.slf4j.event; bundle-symbolic-name="slf4j.api"; bundle-version="2.0.16"; version="2.0.16"; uses:="org.slf4j,org.slf4j.helpers"
+
+
+!ENTRY org.eclipse.ui.ide 2 0 2024-12-05 23:58:36.778
+!MESSAGE Could not resolve module: org.eclipse.ui.ide [449]
+  Unresolved requirement: Import-Package: jakarta.annotation; version="[2.1.0,3.0.0)"
+
+
+!ENTRY org.eclipse.mylyn.context.core 2 0 2024-12-05 23:58:36.778
+!MESSAGE Could not resolve module: org.eclipse.mylyn.context.core [324]
+  Unresolved requirement: Import-Package: org.apache.commons.io; version="[1.4.0,3.0.0)"
+
+
+!ENTRY org.eclipse.epp.package.java 2 0 2024-12-05 23:58:36.778
+!MESSAGE Could not resolve module: org.eclipse.epp.package.java [175]
+  Unresolved requirement: Require-Bundle: org.eclipse.platform
+    -> Bundle-SymbolicName: org.eclipse.platform; bundle-version="4.33.0.v20240903-0240"; singleton:="true"
+       org.eclipse.platform [413]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.intro; bundle-version="[3.2.0,4.0.0)"
+
+
+!ENTRY org.eclipse.m2e.sourcelookup.ui 2 0 2024-12-05 23:58:36.778
+!MESSAGE Could not resolve module: org.eclipse.m2e.sourcelookup.ui [305]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui
+    -> Bundle-SymbolicName: org.eclipse.ui; bundle-version="3.206.100.v20240720-1232"; singleton:="true"
+       org.eclipse.ui [441]
+         Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+
+!ENTRY org.eclipse.mylyn.commons.workbench 2 0 2024-12-05 23:58:36.778
+!MESSAGE Could not resolve module: org.eclipse.mylyn.commons.workbench [322]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.expressions; bundle-version="0.0.0"
+    -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+       org.eclipse.core.expressions [104]
+         Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+
+!ENTRY org.eclipse.ui.navigator.resources 2 0 2024-12-05 23:58:36.786
+!MESSAGE Could not resolve module: org.eclipse.ui.navigator.resources [456]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.ide; bundle-version="[3.21.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.ui.ide; bundle-version="3.22.300.v20240828-1234"; singleton:="true"
+       org.eclipse.ui.ide [449]
+         Unresolved requirement: Import-Package: jakarta.annotation; version="[2.1.0,3.0.0)"
+
+
+!ENTRY org.eclipse.platform 2 0 2024-12-05 23:58:36.786
+!MESSAGE Could not resolve module: org.eclipse.platform [413]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.intro; bundle-version="[3.2.0,4.0.0)"
+
+
+!ENTRY org.eclipse.jface.text 2 0 2024-12-05 23:58:36.786
+!MESSAGE Could not resolve module: org.eclipse.jface.text [266]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+
+!ENTRY org.eclipse.oomph.setup.core 2 0 2024-12-05 23:58:36.786
+!MESSAGE Could not resolve module: org.eclipse.oomph.setup.core [397]
+  Unresolved requirement: Import-Package: org.apache.hc.client5.http.cookie; version="[5.1.3,6.0.0)"
+
+
+!ENTRY org.eclipse.egit.core 2 0 2024-12-05 23:58:36.788
+!MESSAGE Could not resolve module: org.eclipse.egit.core [156]
+  Unresolved requirement: Import-Package: org.bouncycastle.jce.provider; version="[1.77.0,2.0.0)"
+
+
+!ENTRY ch.qos.logback.classic 2 0 2024-12-05 23:58:36.788
+!MESSAGE Could not resolve module: ch.qos.logback.classic [7]
+  Unresolved requirement: Import-Package: jakarta.servlet; version="[5.0.0,6.0.0)"; resolution:="optional"
+  Unresolved requirement: Import-Package: jakarta.servlet.http; version="[5.0.0,6.0.0)"; resolution:="optional"
+  Unresolved requirement: Import-Package: org.slf4j; version="[2.0.0,3.0.0)"
+    -> Export-Package: org.slf4j; bundle-symbolic-name="slf4j.api"; bundle-version="2.0.16"; version="2.0.16"; uses:="org.slf4j.event,org.slf4j.helpers,org.slf4j.spi"
+       slf4j.api [519]
+         Unresolved requirement: Require-Capability: osgi.extender; filter:="(&(osgi.extender=osgi.serviceloader.processor)(version>=1.0.0)(!(version>=2.0.0)))"
+  Unresolved requirement: Import-Package: org.slf4j.event; version="[2.0.0,3.0.0)"
+    -> Export-Package: org.slf4j.event; bundle-symbolic-name="slf4j.api"; bundle-version="2.0.16"; version="2.0.16"; uses:="org.slf4j,org.slf4j.helpers"
+
+
+!ENTRY org.eclipse.ltk.ui.refactoring 2 0 2024-12-05 23:58:36.788
+!MESSAGE Could not resolve module: org.eclipse.ltk.ui.refactoring [279]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+
+!ENTRY org.eclipse.equinox.p2.ui 2 0 2024-12-05 23:58:36.788
+!MESSAGE Could not resolve module: org.eclipse.equinox.p2.ui [215]
+  Unresolved requirement: Import-Package: org.bouncycastle.bcpg; version="1.65.0"
+
+
+!ENTRY com.google.guava 2 0 2024-12-05 23:58:36.788
+!MESSAGE Could not resolve module: com.google.guava [10]
+  Unresolved requirement: Import-Package: com.google.common.util.concurrent.internal; version="[1.0.0,2.0.0)"
+
+
+!ENTRY org.eclipse.mylyn.github.ui 2 0 2024-12-05 23:58:36.788
+!MESSAGE Could not resolve module: org.eclipse.mylyn.github.ui [333]
+  Unresolved requirement: Import-Package: org.eclipse.egit.core; version="[6.2.0,8.0.0)"
+    -> Export-Package: org.eclipse.egit.core; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="7.0.0.202409031743-r"; version="7.0.0"; x-friends:="org.eclipse.egit.ui,  org.eclipse.egit.ui.test,  org.eclipse.egit.gitflow.test,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.core.junit"
+       org.eclipse.egit.core [156]
+         Unresolved requirement: Import-Package: org.bouncycastle.jce.provider; version="[1.77.0,2.0.0)"
+
+
+!ENTRY org.eclipse.mylyn.tasks.index.ui 2 0 2024-12-05 23:58:36.788
+!MESSAGE Could not resolve module: org.eclipse.mylyn.tasks.index.ui [352]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="0.0.0"
+
+
+!ENTRY org.eclipse.eclemma.ui 2 0 2024-12-05 23:58:36.788
+!MESSAGE Could not resolve module: org.eclipse.eclemma.ui [154]
+  Unresolved requirement: Require-Bundle: org.eclipse.eclemma.core
+
+
+!ENTRY org.eclipse.e4.ui.workbench.swt 2 0 2024-12-05 23:58:36.788
+!MESSAGE Could not resolve module: org.eclipse.e4.ui.workbench.swt [139]
+  Unresolved requirement: Import-Package: jakarta.annotation; version="[2.1.0,3.0.0)"
+
+
+!ENTRY org.eclipse.e4.ui.workbench.renderers.swt 2 0 2024-12-05 23:58:36.788
+!MESSAGE Could not resolve module: org.eclipse.e4.ui.workbench.renderers.swt [138]
+  Unresolved requirement: Import-Package: jakarta.annotation; version="[2.1.0,3.0.0)"
+
+
+!ENTRY org.eclipse.team.core 2 0 2024-12-05 23:58:36.788
+!MESSAGE Could not resolve module: org.eclipse.team.core [420]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.resources; bundle-version="[3.17.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.core.resources; bundle-version="3.21.0.v20240805-1607"; singleton:="true"
+       org.eclipse.core.resources [110]
+         Unresolved requirement: Require-Bundle: org.eclipse.ant.core; bundle-version="[3.1.0,4.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.filesystem; bundle-version="[1.10.0,2.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.expressions; bundle-version="[3.9.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+              org.eclipse.core.expressions [104]
+                Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+
+!ENTRY org.eclipse.buildship.core 2 0 2024-12-05 23:58:36.788
+!MESSAGE Could not resolve module: org.eclipse.buildship.core [90]
+  Unresolved requirement: Import-Package: org.slf4j; version="1.7.2"
+    -> Export-Package: org.slf4j; bundle-symbolic-name="slf4j.api"; bundle-version="2.0.16"; version="2.0.16"; uses:="org.slf4j.event,org.slf4j.helpers,org.slf4j.spi"
+       slf4j.api [519]
+         Unresolved requirement: Require-Capability: osgi.extender; filter:="(&(osgi.extender=osgi.serviceloader.processor)(version>=1.0.0)(!(version>=2.0.0)))"
+
+
+!ENTRY org.eclipse.ui 2 0 2024-12-05 23:58:36.788
+!MESSAGE Could not resolve module: org.eclipse.ui [441]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+
+!ENTRY org.eclipse.m2e.maven.runtime 2 0 2024-12-05 23:58:36.788
+!MESSAGE Could not resolve module: org.eclipse.m2e.maven.runtime [297]
+  Unresolved requirement: Import-Package: org.slf4j.helpers; version="[1.7.31,3.0.0)"
+    -> Export-Package: org.slf4j.helpers; bundle-symbolic-name="slf4j.api"; bundle-version="2.0.16"; version="2.0.16"; uses:="org.slf4j,org.slf4j.event,org.slf4j.spi"
+       slf4j.api [519]
+         Unresolved requirement: Require-Capability: osgi.extender; filter:="(&(osgi.extender=osgi.serviceloader.processor)(version>=1.0.0)(!(version>=2.0.0)))"
+
+
+!ENTRY org.eclipse.buildship.compat 2 0 2024-12-05 23:58:36.788
+!MESSAGE Could not resolve module: org.eclipse.buildship.compat [89]
+  Unresolved requirement: Require-Bundle: org.gradle.toolingapi; bundle-version="[8.1.1,8.2.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.gradle.toolingapi; bundle-version="8.1.1.v20240115-1636"
+       org.gradle.toolingapi [479]
+         Unresolved requirement: Import-Package: org.slf4j; version="1.7.2"
+           -> Export-Package: org.slf4j; bundle-symbolic-name="slf4j.api"; bundle-version="2.0.16"; version="2.0.16"; uses:="org.slf4j.event,org.slf4j.helpers,org.slf4j.spi"
+              slf4j.api [519]
+                Unresolved requirement: Require-Capability: osgi.extender; filter:="(&(osgi.extender=osgi.serviceloader.processor)(version>=1.0.0)(!(version>=2.0.0)))"
+
+
+!ENTRY org.eclipse.core.expressions 2 0 2024-12-05 23:58:36.788
+!MESSAGE Could not resolve module: org.eclipse.core.expressions [104]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+
+!ENTRY org.eclipse.equinox.p2.updatechecker 2 0 2024-12-05 23:58:36.788
+!MESSAGE Could not resolve module: org.eclipse.equinox.p2.updatechecker [220]
+  Unresolved requirement: Import-Package: org.eclipse.equinox.internal.p2.core.helpers
+    -> Export-Package: org.eclipse.equinox.internal.p2.core.helpers; bundle-symbolic-name="org.eclipse.equinox.p2.core"; bundle-version="2.12.100.v20240702-1335"; version="0.0.0"; x-friends:="org.eclipse.equinox.frameworkadmin.test,  org.eclipse.equinox.p2.examples.rcp.prestartupdate,  org.eclipse.equinox.p2.artifact.optimizers,  org.eclipse.equinox.p2.artifact.processors,  org.eclipse.equinox.p2.artifact.repository,  org.eclipse.equinox.p2.console,  org.eclipse.equinox.p2.director,  org.eclipse.equinox.p2.director.app,  org.eclipse.equinox.p2.directorywatcher,  org.eclipse.equinox.p2.download,  org.eclipse.equinox.p2.engine,  org.eclipse.equinox.p2.extensionlocation,  org.eclipse.equinox.p2.garbagecollector,  org.eclipse.equinox.p2.installer,  org.eclipse.equinox.p2.metadata,  org.eclipse.equinox.p2.metadata.repository,  org.eclipse.equinox.p2.operations,  org.eclipse.equinox.p2.publisher,  org.eclipse.equinox.p2.publisher.eclipse,  org.eclipse.equinox.p2.reconciler.dropins,  org.eclipse.equinox.p2.repository,  org.eclipse.equinox.p2.repository.tools,  org.eclipse.equinox.p2.repositoryoptimizer,  org.eclipse.equinox.p2.touchpoint.eclipse,  org.eclipse.equinox.p2.touchpoint.natives,  org.eclipse.equinox.p2.ui,  org.eclipse.equinox.p2.ui.admin,  org.eclipse.equinox.p2.ui.sdk,  org.eclipse.equinox.p2.ui.sdk.scheduler,  org.eclipse.equinox.p2.updatechecker,  org.eclipse.equinox.p2.updatechecker.app,  org.eclipse.equinox.p2.updatesite,  org.eclipse.equinox.p2.transport.ecf,  org.eclipse.equinox.p2.discovery.compatibility,  org.eclipse.equinox.p2.ui.discovery,  org.eclipse.equinox.p2.discovery"
+       org.eclipse.equinox.p2.core [194]
+         Unresolved requirement: Import-Package: org.bouncycastle.bcpg; version="1.65.0"
+
+
+!ENTRY org.eclipse.equinox.p2.core 2 0 2024-12-05 23:58:36.788
+!MESSAGE Could not resolve module: org.eclipse.equinox.p2.core [194]
+  Unresolved requirement: Import-Package: org.bouncycastle.bcpg; version="1.65.0"
+
+
+!ENTRY org.gradle.toolingapi 2 0 2024-12-05 23:58:36.788
+!MESSAGE Could not resolve module: org.gradle.toolingapi [479]
+  Unresolved requirement: Import-Package: org.slf4j; version="1.7.2"
+    -> Export-Package: org.slf4j; bundle-symbolic-name="slf4j.api"; bundle-version="2.0.16"; version="2.0.16"; uses:="org.slf4j.event,org.slf4j.helpers,org.slf4j.spi"
+       slf4j.api [519]
+         Unresolved requirement: Require-Capability: osgi.extender; filter:="(&(osgi.extender=osgi.serviceloader.processor)(version>=1.0.0)(!(version>=2.0.0)))"
+
+
+!ENTRY org.eclipse.debug.ui 2 0 2024-12-05 23:58:36.788
+!MESSAGE Could not resolve module: org.eclipse.debug.ui [114]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.variables; bundle-version="[3.2.800,4.0.0)"
+  Unresolved requirement: Import-Package: org.eclipse.ui.forms.widgets
+    -> Export-Package: org.eclipse.ui.forms.widgets; bundle-symbolic-name="org.eclipse.ui.forms"; bundle-version="3.13.300.v20240424-0956"; version="0.0.0"
+       org.eclipse.ui.forms [447]
+         Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+
+!ENTRY org.eclipse.jgit.gpg.bc 2 0 2024-12-05 23:58:36.788
+!MESSAGE Could not resolve module: org.eclipse.jgit.gpg.bc [269]
+  Unresolved requirement: Import-Package: org.bouncycastle.asn1; version="[1.69.0,2.0.0)"
+  Unresolved requirement: Fragment-Host: org.eclipse.jgit; bundle-version="[7.0.0,7.1.0)"
+    -> Bundle-SymbolicName: org.eclipse.jgit; bundle-version="7.0.0.202409031743-r"
+       org.eclipse.jgit [267]
+         Unresolved requirement: Import-Package: com.googlecode.javaewah; version="[1.1.6,2.0.0)"
+
+
+!ENTRY org.eclipse.equinox.p2.engine 2 0 2024-12-05 23:58:36.788
+!MESSAGE Could not resolve module: org.eclipse.equinox.p2.engine [200]
+  Unresolved requirement: Import-Package: org.bouncycastle.openpgp; version="1.65.0"
+
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2024-12-05 23:58:36.788
+!MESSAGE Could not resolve module: org.eclipse.e4.ui.workbench [136]
+  Unresolved requirement: Import-Package: jakarta.annotation; version="[2.1.0,3.0.0)"
+
+
+!ENTRY org.eclipse.epp.package.common 2 0 2024-12-05 23:58:36.788
+!MESSAGE Could not resolve module: org.eclipse.epp.package.common [174]
+  Unresolved requirement: Require-Bundle: org.eclipse.equinox.app
+  Unresolved requirement: Require-Bundle: org.eclipse.platform
+    -> Bundle-SymbolicName: org.eclipse.platform; bundle-version="4.33.0.v20240903-0240"; singleton:="true"
+       org.eclipse.platform [413]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.intro; bundle-version="[3.2.0,4.0.0)"
+
+
+!ENTRY org.eclipse.jdt.core 2 0 2024-12-05 23:58:36.788
+!MESSAGE Could not resolve module: org.eclipse.jdt.core [239]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.resources; bundle-version="[3.21.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.core.resources; bundle-version="3.21.0.v20240805-1607"; singleton:="true"
+       org.eclipse.core.resources [110]
+         Unresolved requirement: Require-Bundle: org.eclipse.ant.core; bundle-version="[3.1.0,4.0.0)"; resolution:="optional"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.filesystem; bundle-version="[1.10.0,2.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.core.expressions; bundle-version="[3.9.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.core.expressions; bundle-version="3.9.400.v20240413-1529"; singleton:="true"
+              org.eclipse.core.expressions [104]
+                Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.29.0,4.0.0)"
+
+
+!ENTRY org.apache.lucene.queryparser 2 0 2024-12-05 23:58:36.798
+!MESSAGE Could not resolve module: org.apache.lucene.queryparser [73]
+  Unresolved requirement: Import-Package: org.apache.lucene.queries.intervals; version="[9.11.0,10.0.0)"
+
+
+!ENTRY org.eclipse.oomph.setup 2 0 2024-12-05 23:58:36.798
+!MESSAGE Could not resolve module: org.eclipse.oomph.setup [396]
+  Unresolved requirement: Require-Bundle: org.eclipse.core.runtime; bundle-version="[3.24.0,4.0.0)"
+
+
+!ENTRY org.eclipse.ui.genericeditor 2 0 2024-12-05 23:58:36.798
+!MESSAGE Could not resolve module: org.eclipse.ui.genericeditor [448]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.workbench.texteditor; bundle-version="3.10.0"
+
+
+!ENTRY org.eclipse.osgi 4 0 2024-12-05 23:58:36.800
+!MESSAGE Application error
+!STACK 1
+java.lang.IllegalStateException: Unable to acquire application service. Ensure that the org.eclipse.core.runtime bundle is resolved and started (see config.ini).
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:86)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
