@@ -1,1 +1,0 @@
-C:\Users\ADMIN\Downloads\microsoft-jdk-17.0.13-windows-x64\jdk-17.0.13+11;17;0;13;64;true;1732185707193;x86_64
